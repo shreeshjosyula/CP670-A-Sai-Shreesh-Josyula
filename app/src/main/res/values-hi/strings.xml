@@ -3,4 +3,13 @@
     <string name="app_name">CP-670 (Hindi)</string>
     <string name="hello_message">नमस्ते!</string>
     <string name="ButtonText">मैं\' एक बटन हूँ</string>
+    <string name="LoginText">लॉग इन करें</string>
+    <string name="LoginName">लॉगिन नाम</string>
+    <string name="Password">पासवर्ड</string>
+    <string name="NextPage">अगला पृष्ठ</string>
+    <string name="PreviousPage">पिछला पृष्ठ</string>
+    <string name="Home">घर</string>
+    <string name="Switch1Text"> यह क्या करता है?</string>
+    <string name="checkBox">चेक बॉक्स</string>
+    <string name="radioButton">रेडियो की बटन</string>
 </resources>
