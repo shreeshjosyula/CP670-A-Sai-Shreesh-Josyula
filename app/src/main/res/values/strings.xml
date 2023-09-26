@@ -2,4 +2,14 @@
     <string name="app_name">CP-670 (English)</string>
     <string name="hello_message">Hello!</string>
     <string name="ButtonText">I\’m a button</string>
+    <string name="LoginText">Login</string>
+    <string name="LoginName">Login Name</string>
+    <string name="Password">Password</string>
+    <string name="NextPage">Next Page</string>
+    <string name="PreviousPage">Previous Page</string>
+    <string name="Home">Home</string>
+    <string name="Switch1Text"> What does this do?</string>
+    <string name="checkBox">CheckBox</string>
+    <string name="radioButton">RadioButton</string>
+
 </resources>
