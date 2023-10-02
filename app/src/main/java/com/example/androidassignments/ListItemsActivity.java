@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
@@ -33,9 +34,10 @@ public class ListItemsActivity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_REQUEST_CODE  = 2;
     Button buttonPB,buttonHome;
     ImageButton buttonPhoto;
-    Switch buttonSwitch;
+    Switch buttonSwitchListActivity;
+//    RadioButton buttonRadioListActivity;
 
-    CheckBox buttonCheckBox;
+    CheckBox buttonCheckBoxListActivity;
 
 
     @Override
@@ -45,15 +47,14 @@ public class ListItemsActivity extends AppCompatActivity {
         buttonPB = findViewById(R.id.button5);
         buttonHome = findViewById(R.id.button6);
         buttonPhoto = findViewById(R.id.imageButton);
-        buttonSwitch = findViewById(R.id.switchListItems);
-        buttonCheckBox = findViewById(R.id.checkBoxListItems);
+        buttonSwitchListActivity = findViewById(R.id.switchListItems);
+        buttonCheckBoxListActivity = findViewById(R.id.checkBoxListItems);
+//        buttonRadioListActivity = findViewById(R.id.radioButtonListItem);
 
         print(getString(R.string.iambuttonDebug));
 
-
-
         // CheckBox button
-        buttonCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        buttonCheckBoxListActivity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -65,7 +66,7 @@ public class ListItemsActivity extends AppCompatActivity {
 
 
         // Switch button
-        buttonSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        buttonSwitchListActivity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked ) {
                 CharSequence text = isChecked ? getString(R.string.switchOn) : getString(R.string.switchOff);
@@ -132,12 +133,13 @@ public class ListItemsActivity extends AppCompatActivity {
                 .setTitle(R.string.dialogTitle)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
+                        Log.i("ListItemsActivity", "onFinish()");
                         onFinish();
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        buttonCheckBox.setChecked(false);
+                        buttonCheckBoxListActivity.setChecked(false);
                     }
                 })
                 .show();
@@ -146,9 +148,9 @@ public class ListItemsActivity extends AppCompatActivity {
 
     private void onFinish() {
         // Debug information
-        Log.i("ListItemsActivity", "onFinish()");
+        Log.i("ListItemsActivity", "onFinish()inside");
         Intent resultIntent = new Intent();
-        resultIntent.putExtra("Response", R.string.listActivityExitResponse);
+        resultIntent.putExtra("Response", getString(R.string.listActivityExitResponse));
         setResult(Activity.RESULT_OK, resultIntent);
         finish();
     }
@@ -159,10 +161,10 @@ public class ListItemsActivity extends AppCompatActivity {
 
     private void print(String message) {
         //Toast:
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 
         //Snackbar:
-//         Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show();
+         Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_SHORT).show();
     }
 
 

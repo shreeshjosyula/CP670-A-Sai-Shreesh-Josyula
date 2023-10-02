@@ -14,7 +14,7 @@
     tools:context=".ListItemsActivity">
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonListItem"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
