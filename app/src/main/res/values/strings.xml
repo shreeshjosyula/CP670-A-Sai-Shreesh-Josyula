@@ -12,4 +12,13 @@
     <string name="checkBox">CheckBox</string>
     <string name="radioButton">RadioButton</string>
 
+    <string name="dialogMessage">Do you want exit from Activity List?</string>
+    <string name="dialogTitle"> Exit </string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="listActivityExitResponse">Exited to Main Activity</string>
+    <string name="iambuttonDebug">You have entered List Activity Page</string>
+    <string name="switchOn">Switch is On</string>
+    <string name="switchOff">Switch is Off</string>
+
 </resources>
