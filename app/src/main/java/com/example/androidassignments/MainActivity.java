@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonLP, buttonNP;
+    private Button  buttonNP, buttonStartChat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttonNP = (Button) findViewById(R.id.button);
-//        buttonLP = (Button) findViewById(R.id.button1);
+        buttonStartChat = (Button) findViewById(R.id.startChatButton);
+
+        buttonStartChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i("MainActivity", "User clicked Start Chat");
+                Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
         buttonNP.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -30,13 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-//        buttonLP.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                openListItemsActivity();
-//            }
-//
-//        });
 
 
         Log.i("MainActivity", "onCreateFun");
@@ -84,15 +87,6 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         Log.i("MainActivity", "onRestoreInstanceStateFun");
     }
-
-//    public void openLoginActivity(){
-//        Intent i = new Intent(this, LoginActivity.class);
-//        startActivity(i);
-//    }
-//    public void openListItemsActivity(){
-//        Intent i = new Intent(this, LoginActivity.class);
-//        startActivity(i);
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

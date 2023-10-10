@@ -15,16 +15,13 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity{
 
 
-    Button buttonPB, buttonNP ,buttonHome,buttonLogin;
+    Button buttonLogin;
     EditText emailText,passwordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-//        buttonNP =findViewById(R.id.button2);
-//        buttonPB = findViewById(R.id.button3);
-//        buttonHome = findViewById(R.id.button4);
         buttonLogin = findViewById(R.id.button7);
         emailText = findViewById(R.id.emailText);
         passwordText = findViewById(R.id.passwordText);
@@ -65,24 +62,6 @@ public class LoginActivity extends AppCompatActivity{
         });
 
 
-//        buttonNP.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                openListItemsActivity();
-//            }
-//        });
-//        buttonPB.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                openMainActivity();
-//            }
-//        });
-//        buttonHome.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view){
-//                openMainActivity();
-//            }
-//        });
         Log.i("LoginActivity", "onCreateFun");
     }
 
@@ -117,28 +96,17 @@ public class LoginActivity extends AppCompatActivity{
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState){
+    public void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
         Log.i("LoginActivity", "onSaveInstanceStateFun");
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState){
+    public void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
         Log.i("LoginActivity", "onRestoreInstanceStateFun");
     }
 
 
 
-//    public View.OnClickListener openListItemsActivity() {
-//        Intent i = new Intent(this, ListItemsActivity.class);
-//        startActivity(i);
-//        return null;
-//    }
-//
-//    public View.OnClickListener openMainActivity() {
-//        Intent i = new Intent(this, MainActivity.class);
-//        startActivity(i);
-//        return null;
-//    }
 }

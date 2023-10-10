@@ -21,4 +21,8 @@
     <string name="switchOn">Switch is On</string>
     <string name="switchOff">Switch is Off</string>
 
+    <string name="startChatBtn">Start Chat</string>
+    <string name="send">Send</string>
+    <string name="editTextChat">Type your message</string>
+
 </resources>

@@ -20,4 +20,8 @@
     <string name="iambuttonDebug">आपने सूची गतिविधि पृष्ठ दर्ज किया है</string>
     <string name="switchOn">स्विच चालू है</string>
     <string name="switchOff">स्विच ऑफ है</string>
+
+    <string name="startChatBtn">बातचीत शुरू कीजिए</string>
+    <string name="send">भेजना</string>
+    <string name="editTextChat">अपना संदेश टाइप करें</string>
 </resources>
