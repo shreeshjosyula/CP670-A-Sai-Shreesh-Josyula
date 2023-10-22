@@ -21,8 +21,8 @@ public class ChatWindow extends AppCompatActivity {
 
     private ListView chatListView;
     private EditText messageEditText;
-    private Button sendButton;
-    private ArrayList<String> chatMessages;
+    public Button sendButton;
+    public ArrayList<String> chatMessages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
