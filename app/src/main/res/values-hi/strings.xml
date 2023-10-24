@@ -20,8 +20,18 @@
     <string name="iambuttonDebug">आपने सूची गतिविधि पृष्ठ दर्ज किया है</string>
     <string name="switchOn">स्विच चालू है</string>
     <string name="switchOff">स्विच ऑफ है</string>
-
     <string name="startChatBtn">बातचीत शुरू कीजिए</string>
     <string name="send">भेजना</string>
     <string name="editTextChat">अपना संदेश टाइप करें</string>
+
+    <string name="title_activity_test_toolbar">टेस्टटूलबार</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">अगला</string>
+    <string name="previous">पहले का</string>
+    <string name="toolbarBtn">परीक्षण टूलबार</string>
+    <string name="dialog_title">क्या आप वापस जाना चाहते हैं?</string>
+    <string name="dialog_message">यह क्रिया वर्तमान गतिविधि को समाप्त कर देगी. क्या आपकी आगे बढ़ने की इच्छा है?</string>
+    <string name="dialog_positive_button">हाँ</string>
+    <string name="dialog_negative_button">नहीं</string>
 </resources>

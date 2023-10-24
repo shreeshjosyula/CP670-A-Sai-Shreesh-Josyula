@@ -26,9 +26,10 @@
         android:layout_marginEnd="144dp"
         android:layout_marginBottom="373dp"
         android:text="@string/ButtonText"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
@@ -37,6 +38,7 @@
         android:id="@+id/startChatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
         android:layout_centerInParent="true"
         android:text="@string/startChatBtn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,6 +46,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/btnTestToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:onClick="startTestToolbarActivity"
+        android:text="@string/toolbarBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startChatButton"
+        app:layout_constraintVertical_bias="0.13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

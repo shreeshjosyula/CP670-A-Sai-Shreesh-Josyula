@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button  buttonNP, buttonStartChat;
+    private Button  buttonNP, buttonStartChat, buttonToolBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
         buttonNP = (Button) findViewById(R.id.button);
         buttonStartChat = (Button) findViewById(R.id.startChatButton);
+        buttonToolBar = (Button) findViewById(R.id.btnTestToolbar);
+
+        buttonToolBar.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i("MainActivity", "User clicked ToolBar Chat");
+                Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+                startActivity(intent);
+            }
+        }));
 
         buttonStartChat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,4 +117,6 @@ public class MainActivity extends AppCompatActivity {
             }
             Log.i("MainActivity", "Returned to MainActivity.onActivityResult");
         }
+
+
     }

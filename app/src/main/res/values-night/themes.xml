@@ -4,6 +4,10 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorPrimaryVariant">@color/appBackground</item>
+<!--        <item name="android:button">@color/appBackground</item>-->
         <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/appBackground</item>
+        <item name="colorSecondary">@color/appBackground</item>
+        <item name="buttonTint">@color/appBackground</item>
     </style>
 </resources>
