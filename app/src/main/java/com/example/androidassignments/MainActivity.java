@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button  buttonNP, buttonStartChat, buttonToolBar;
+    private Button  buttonNP, buttonStartChat, buttonToolBar, buttonWeatherForecast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
         buttonNP = (Button) findViewById(R.id.button);
         buttonStartChat = (Button) findViewById(R.id.startChatButton);
         buttonToolBar = (Button) findViewById(R.id.btnTestToolbar);
+        buttonWeatherForecast = (Button) findViewById(R.id.btnWeatherForecast);
+
+        buttonWeatherForecast.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i("MainActivity", "User clicked Weather Forecast");
+                Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        }));
 
         buttonToolBar.setOnClickListener((new View.OnClickListener() {
             @Override

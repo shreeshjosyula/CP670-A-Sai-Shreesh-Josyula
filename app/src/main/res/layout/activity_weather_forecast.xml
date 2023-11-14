@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/newChooseCityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectCity"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/newCitySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/newChooseCityTitle"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/newWeatherImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/weatherforecast"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/newCitySpinner"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/newCurrentTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newWeatherImageView"
+        android:layout_marginTop="16dp"
+        android:text="@string/currentTemperature"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/newMinTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newCurrentTemperatureTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/minTemperature"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/newMaxTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newMinTemperatureTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/maxTemperature"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/newProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newMaxTemperatureTextView"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:indeterminate="false"/>
+
+</RelativeLayout>

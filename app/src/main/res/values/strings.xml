@@ -22,8 +22,6 @@
     <string name="startChatBtn">Start Chat</string>
     <string name="send">Send</string>
     <string name="editTextChat">Type your message</string>
-
-
     <string name="title_activity_test_toolbar">TestToolbar</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -34,6 +32,20 @@
     <string name="dialog_message">This action will finish the current activity. Do you want to proceed?</string>
     <string name="dialog_positive_button">Yes</string>
     <string name="dialog_negative_button">No</string>
+
+
+    <string name="WeatherForecast">Weather Forecast</string>
+    <string name="selectCity"> Select City</string>
+    <string name="currentTemperature">Current Temperature</string>
+    <string name="minTemperature">Min Temperature</string>
+    <string name="maxTemperature">Max Temperature</string>
+    <string-array name="canadian_cities">
+        <item>Ottawa</item>
+        <item>Vancouver</item>
+        <item>Mississauga</item>
+        <item>Waterloo</item>
+        <item>Hamilton</item>
+    </string-array>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
