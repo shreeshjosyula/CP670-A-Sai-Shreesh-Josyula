@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:padding="8dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseCompoundDrawables">
 
     <ImageView
-        android:id="@+id/outgoingImage"
+        android:id="@+id/callOutgoingImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/sym_call_outgoing"
-        android:layout_gravity="center_vertical"
-        android:layout_marginEnd="8dp"/>
+        app:srcCompat="@android:drawable/sym_call_outgoing"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/message_text"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Outgoing Message"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        android:text="TextView"
+        tools:ignore="HardcodedText,InefficientWeight" />
 </LinearLayout>

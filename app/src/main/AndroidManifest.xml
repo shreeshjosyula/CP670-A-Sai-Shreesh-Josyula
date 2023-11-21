@@ -21,6 +21,12 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
         <activity
+            android:name=".MessageDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MessageFragment"
+            android:exported="false" />
+        <activity
             android:name=".WeatherForecast"
             android:exported="false" />
         <activity
